@@ -2,19 +2,20 @@ import argparse
 
 from Board import Board
 from Queen import Queen
+from Knight import Knight
 
 #Working out how the attacks function works
-#myBoard = Board(3)
+myBoard = Board(5)
 
-#myQueen = Queen()
+myKnight = Knight()
 
-#myQueen.placeOn(myBoard, 1, 1)
+myKnight.placeOn(myBoard, 3, 3)
 
-#myQueen2 = Queen()
-#myQueen2.placeOn(myBoard, 3, 2)
+myKnight2 = Knight()
+myKnight2.placeOn(myBoard, 1, 2)
 
-#s = myQueen.attacks(myQueen2)
-#print(s)
+s = myKnight.attacks(myKnight2)
+print(s) #returns True as Knight1 can attack that position
 
 
 # https://en.wikipedia.org/wiki/Eight_queens_puzzle
