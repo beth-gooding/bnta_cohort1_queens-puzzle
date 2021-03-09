@@ -3,6 +3,20 @@ import argparse
 from Board import Board
 from Queen import Queen
 
+#Working out how the attacks function works
+#myBoard = Board(3)
+
+#myQueen = Queen()
+
+#myQueen.placeOn(myBoard, 1, 1)
+
+#myQueen2 = Queen()
+#myQueen2.placeOn(myBoard, 3, 2)
+
+#s = myQueen.attacks(myQueen2)
+#print(s)
+
+
 # https://en.wikipedia.org/wiki/Eight_queens_puzzle
 def numberOfSolutions(i, board):
     if (i < board.size()):

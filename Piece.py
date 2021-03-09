@@ -1,4 +1,4 @@
-class Piece:
+class Piece:                                                    #Piece does not inherit from board, hence we don't need to import the board class here.
     def __init__(self):                                         #Constructs the piece class with the given properties
         self.board = None
         self.i = None
