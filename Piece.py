@@ -25,8 +25,8 @@ class Piece:                                                    #Piece does not 
             self.board.remove(self)
             self.board = None
 
-    def attacks(self, piece):                                  #This is an abstract method, the attacks method belongs to all classes of pieces, but not the pieces class itself
-                                                               #as the attack is different for each class which inherits from pieces class.
+    def attacks(self, piece):                                  #This is an abstract method, the attacks method belongs to all classes that inherit from pieces, but
+                                                               # not the pieces class itselfas the attack is different for each class which inherits from pieces class.
         raise Exception("An abstract method has been invoked")
 
     def isMindfulOf(self, piece):
